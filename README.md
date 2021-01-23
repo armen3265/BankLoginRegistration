@@ -1,6 +1,6 @@
 Bank Login & Registration Program
 
-After starting the program, the user:
+After starting the program, the user can:
 
 1. Register or log in an existing account,
 2. View his(her) data, for example, how much money is in the account,
