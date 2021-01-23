@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++-9"
+	BuildStamp="20210122-1220-Experimental"
+	Name="armen445"
+	Generator="ctest-3.16.3"
+	CompilerName="/bin/g++-9"
+	CompilerVersion="9.3.0"
+	OSName="Linux"
+	Hostname="armen445"
+	OSRelease="5.8.0-38-generic"
+	OSVersion="#43~20.04.1-Ubuntu SMP Tue Jan 12 16:39:47 UTC 2021"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="42"
+	ProcessorCacheSize="3072"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="1986"
+	TotalPhysicalMemory="3817"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2618.62"
+	>
+	<Testing>
+		<StartDateTime>Jan 22 16:21 +04</StartDateTime>
+		<StartTestTime>1611318077</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 22 16:21 +04</EndDateTime>
+		<EndTestTime>1611318077</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

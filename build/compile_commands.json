@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/armen/armDirectory/MyProjects/BankLoginRegistration/build",
+  "command": "/bin/g++-9    -g   -o CMakeFiles/BankRegLog.dir/main.cpp.o -c /home/armen/armDirectory/MyProjects/BankLoginRegistration/main.cpp",
+  "file": "/home/armen/armDirectory/MyProjects/BankLoginRegistration/main.cpp"
+},
+{
+  "directory": "/home/armen/armDirectory/MyProjects/BankLoginRegistration/build",
+  "command": "/bin/g++-9    -g   -o CMakeFiles/BankRegLog.dir/Bank.cpp.o -c /home/armen/armDirectory/MyProjects/BankLoginRegistration/Bank.cpp",
+  "file": "/home/armen/armDirectory/MyProjects/BankLoginRegistration/Bank.cpp"
+},
+{
+  "directory": "/home/armen/armDirectory/MyProjects/BankLoginRegistration/build",
+  "command": "/bin/g++-9    -g   -o CMakeFiles/BankRegLog.dir/Customer.cpp.o -c /home/armen/armDirectory/MyProjects/BankLoginRegistration/Customer.cpp",
+  "file": "/home/armen/armDirectory/MyProjects/BankLoginRegistration/Customer.cpp"
+},
+{
+  "directory": "/home/armen/armDirectory/MyProjects/BankLoginRegistration/build",
+  "command": "/bin/g++-9    -g   -o CMakeFiles/BankRegLog.dir/Functions.cpp.o -c /home/armen/armDirectory/MyProjects/BankLoginRegistration/Functions.cpp",
+  "file": "/home/armen/armDirectory/MyProjects/BankLoginRegistration/Functions.cpp"
+}
+]
