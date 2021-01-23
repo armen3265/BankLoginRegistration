@@ -15,6 +15,4 @@
 #include <climits>
 #include "Customer.h"
 
-enum Program {TEST, FINISH};
-
 #endif //INCLUDELIBRARYS_H
