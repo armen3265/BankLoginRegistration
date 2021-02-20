@@ -10,10 +10,6 @@ Bank::Bank()
 		ifs >> j;
 		ifs.close();
 	}
-	/*else
-	{
-		throw runtime_error("Cannot open text file\n\n");
-	}*/
 
 	if (!j.is_null())
 	{
