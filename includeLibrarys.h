@@ -1,6 +1,4 @@
 #pragma once
-#ifndef INCLUDELIBRARYS_H
-#define INCLUDELIBRARYS_H
 
 #include <map>
 #include <iostream>
@@ -16,5 +14,3 @@
 #include "Customer.h"
 
 enum Program {TEST, FINISH};
-
-#endif //INCLUDELIBRARYS_H
