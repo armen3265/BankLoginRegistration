@@ -14,3 +14,4 @@
 #include "Customer.h"
 
 enum Program {TEST, FINISH};
+
