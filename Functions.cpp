@@ -10,7 +10,7 @@ std::string string_xor(const std::string& str, int key)
     return res;
 }
 
-bool checkInt(std::string obj)
+bool checkInt(const std::string& obj)
 {
     for(char c : obj)
     {

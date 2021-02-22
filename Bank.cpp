@@ -56,27 +56,27 @@ void Bank::ViewAllAccounts()
 	}
 }
 
-string Bank::GetPersonName()
+string Bank::GetPersonName() const
 {
 	return person->getFName();
 }
 
-string Bank::GetUsername()
+string Bank::GetUsername() const
 {
 	return person->getUsName();
 }
 
-int Bank::GetPersonBalance()
+int Bank::GetPersonBalance() const
 {
 	return person->getIntBalance();
 }
 
-string Bank::GetPersonalNumber()
+string Bank::GetPersonalNumber() const
 {
 	return person->getNumber();
 }
 
-void Bank::saveInJson(Customer* c1, Customer* c2)
+void Bank::saveInJson(const Customer* c1,const Customer* c2)
 {
 	//when you close the program, add all the data to our file, in the json format
 
@@ -88,7 +88,7 @@ void Bank::saveInJson(Customer* c1, Customer* c2)
 	j[username]["firstName"] = string_xor(c1->getFName(),key);
 	j[username]["lastName"] = string_xor(c1->getLName(),key);
 	j[username]["number"] = c1->getNumber();
-	j[username]["balance"] = string_xor(c1->getStrBalance(),key);
+	j[username]["balance"] = string_xor(c1->getStrBalance(),key);		
 
 	if(c2!=nullptr)
 	{
@@ -116,8 +116,7 @@ void Bank::saveInJson(Customer* c1, Customer* c2)
 	}
 }
 
-
-bool Bank::Registration(std::string username, string password)
+bool Bank::Registration(const string& username,const string& password)
 {
 	string check = accounts[username].getUsName();
 	if (!check.empty())
@@ -141,7 +140,7 @@ bool Bank::Registration(std::string username, string password)
 	return true;
 }
 
-bool Bank::LogIn(string username, string password)
+bool Bank::LogIn(const string& username,const string& password)
 {
 	if (accounts[username].getUsName() == username && accounts[username].getPsw() == password)
 	{
@@ -160,7 +159,7 @@ int Bank::GetUsersCount()
 	return accounts.size();
 }
 
-void Bank::ChangePerson(string username)
+void Bank::ChangePerson(const string& username)
 {
 	person = &accounts[username];
 }

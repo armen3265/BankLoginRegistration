@@ -1,7 +1,7 @@
 #include "Customer.h"
 
-Customer::Customer(std::string username, std::string password, 
-	std::string firstName, std::string lastName, std::string number, int balance)
+Customer::Customer(const std::string& username,const std::string& password, 
+const	std::string& firstName,const std::string& lastName,const std::string& number, int balance)
 {
 	Counter++;
 	this->username = username;
@@ -21,37 +21,37 @@ Customer::Customer(std::string username, std::string password,
 	
 }
 
-std::string Customer::getUsName()
+std::string Customer::getUsName() const
 {
 	return this->username;
 }
 
-std::string Customer::getPsw()
+std::string Customer::getPsw() const
 {
 	return this->password;
 }
 
-std::string Customer::getFName()
+std::string Customer::getFName() const
 {
 	return this->firstName;
 }
 
-std::string Customer::getLName()
+std::string Customer::getLName() const
 {
 	return this->lastName;
 }
 
-std::string Customer::getNumber()
+std::string Customer::getNumber() const
 {
 	return this->number;
 }
 
-std::string Customer::getStrBalance()
+std::string Customer::getStrBalance() const
 {
 	return std::to_string(balance);
 }
 
-int Customer::getIntBalance()
+int Customer::getIntBalance() const
 {
 	return this->balance;
 }

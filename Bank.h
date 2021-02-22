@@ -1,6 +1,4 @@
 #pragma once
-#ifndef BANK_H
-#define BANK_H
 
 #include "includeLibrarys.h"
 
@@ -9,34 +7,28 @@ using namespace std;
 
 class Bank
 {
-	friend class PersonalArea;
 private:
 	map<string, Customer> accounts;
 	string accJsonStr = "accounts.json";
-	void saveInJson(Customer* c1, Customer* c2);
+	void saveInJson(const Customer* c1, const Customer* c2);
 	Customer* person = nullptr;
-	void ChangePerson(string username);
+	void ChangePerson(const string& username);
 	json j;
- public:
+public:
 	Bank();
 
 	void ViewPersonInformation();
 	void ViewAllAccounts();
-	string GetPersonName();
-	string GetUsername();
-	int GetPersonBalance();
-	string GetPersonalNumber();
+	string GetPersonName() const;
+  string GetUsername() const;
+	int GetPersonBalance() const;
+	string GetPersonalNumber() const;
 
 	bool Deposit(string sum);
 	bool Transaction(string& message);
-	bool Registration(string username, string password);
-	bool LogIn(string username, string password);
+	bool Registration(const string& username,const string& password);
+	bool LogIn(const string& username,const string& password);
 	void RemoveAccount();
 	
 	int GetUsersCount();
 };
-
-
-
-#endif // !BANK_H
-

@@ -50,7 +50,14 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "valarray": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "any": "cpp",
+        "chrono": "cpp",
+        "list": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp",
+        "ratio": "cpp",
+        "variant": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "editor.tokenColorCustomizations": {
@@ -77,5 +84,6 @@
     },
     "gtest-adapter.debugConfig": [
         "g++ - Build and debug active file"
-    ]
+    ],
+    "editor.tabSize": 2
 }
